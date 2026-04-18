@@ -1,11 +1,13 @@
 
-import './App.css'
+
+import logo from '../src/assets/logo.svg'
 
 function App() {
   
   return (
     <>
-      <h1 className='text-4xl'>Welcome to the Web App!</h1>
+      <h1 className='font-monrape '>Welcome to the Web App!</h1>
+      <img src={logo} alt="Logo" />
     </>
   )
 }
