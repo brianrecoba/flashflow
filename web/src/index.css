@@ -6,6 +6,9 @@
 
    --color-primary: #7C3AED;
    --color-secondary: #F7F9FB;
+   --color-button-cancel:  #E1E9EE;
+   --color-button-delete: #9E3F4E; 
    --color-text-primary: #2A3439;
    --color-text-secondary: #566166;
+   --color-background-gray: #F0F4F7
 }
