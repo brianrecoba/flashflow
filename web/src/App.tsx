@@ -1,14 +1,12 @@
+import { Nav } from "./components/Nav"
 
-
-import logo from '../src/assets/logo.svg'
 
 function App() {
   
   return (
-    <>
-      <h1 className='font-monrape '>Welcome to the Web App!</h1>
-      <img src={logo} alt="Logo" />
-    </>
+    <main className='w-screen h-screen flex flex-col bg-secondary p-5'>
+      <Nav/>
+    </main>
   )
 }
 
