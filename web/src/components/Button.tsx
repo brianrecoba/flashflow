@@ -8,10 +8,10 @@ type Props = React.ComponentProps<'button'> & {
 
 const variants = {
     button: {
-        "default": 'w-37.5 h-10 bg-primary rounded-full text-white font-monrape font-bold text-[14px] cursor-pointer',
-        "cancel": '',
-        "delete": '',
-        "save": ''
+        "default": 'w-37.5 h-10 bg-primary',
+        "cancel": "bg-button-cancel",
+        "delete": ' bg-button-delete',
+        "save": 'bg-primary'
     }
 }
 
@@ -22,7 +22,7 @@ export function Button({ children, isLoading, type='button', variant = "default"
           type={type}  
           {...rest}
           disabled = {isLoading}
-          className={classMerge([variants.button[variant], className])}
+          className={classMerge(["flex items-center justify-center w-55.5 h-13 rounded-full text-white font-monrape font-bold text-[14px] cursor-pointer",variants.button[variant], className])}
           >
             {children}
         </button>
